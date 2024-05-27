@@ -1,16 +1,138 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Inicio</title>
-		<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+		<title>FI-Unju</title>
+		<link data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}"
+			  rel="stylesheet">
 	</head>
-	
 	<body>
-		<div class="container">
-		<h1>HOLA MUNDO por fin!!</h1>
+			<div class="container-fluid">
+				<header>
+				<div class="row text-light" >
+				    <div class="col-3">
+				      <img class="img-fluid" alt="xxx" 
+						src="https://www.fi.unju.edu.ar/images/LOGOS-FI-UNJU/logo-fi-unju-institucional-285x159.png">
+				    </div>
+				    <div class="col-9">
+				      <a class="fs-3 fw-bolder">Facultad De Ingenieria <br>
+						Universidad Nacional De Jujuy<br>
+					  </a>
+					  <a class="fs-5 fst-italic">"Lo unico imposible es aquello que no intentas."</a>
+				    </div>
+				     	
+				  </div>
+				</header>
+			 </div>
+		
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+			  <div class="container-fluid bg-primary fw-bolder">
+			    <a class="navbar-brand" href="#">BARRA DE NAVEGACION</a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="https://www.fi.unju.edu.ar/">INICIO</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="https://www.fi.unju.edu.ar/institucional/historia.html">ACERDA DE</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="https://www.fi.unju.edu.ar/oferta-academica.html">CARRERAS</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="https://fi.unju.edu.ar/alumnos-noticias.html">NOTICIAS</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="https://www.fi.unju.edu.ar/telefonos-contactos">CONTACTO</a>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+		</nav>
+		
+		
+		<div class="row">
+			<div class="col-12 col-lg-10">
+				<main>
+					<div class="container text-center">
+					  <div class="row align-items-end">
+					  	<p>
+						La Universidad nace el 25 de mayo de 1972 como universidad provincial y al año siguiente se transforma en Universidad Nacional. Comienza a funcionar sobre la base de cuatro carreras:
+						Ingeniería Agronómica, Ingeniería de Minas, Ingeniería Metalúrgica e Ingeniería Química.
+						Su propósito fue apuntalar las actividades de explotación e industrialización de los recursos naturales de Jujuy. 
+						Las tres últimas carreras mencionadas pasan a constituir la actual Facultad de Ingeniería que, con el transcurso de los años, sumó a ellas un número importante de otras carreras.
+						Las políticas de la Universidad Nacional de Jujuy, y especialmente de la Facultad de Ingeniería, tienden a ampliar el área de influencia y a fortalecer su acción institucional, 
+						en respuesta a la demanda social creciente de formación de recursos humanos que contribuyan al desarrollo científico, tecnológico y cultural.
+						</p>
+						<h2 class="text-bg-danger">Ultimas Noticias</h2>
+					    <div class="col-10 col-md-5 col-lg">
+					        <img class="img-fluid" alt="xxx" 
+								src="https://fi.unju.edu.ar/images/2024-Noticias/cadi-caedi.png">
+							<a  href="https://fi.unju.edu.ar/alumnos-noticias/4577-reunion-informativa-ingeniavoz-24-05-16-30hs.html">CLICK AQUI</a>
+					    </div>
+					    <div class="col-10 col-md-5 col-lg">
+					    	<img class="img-fluid" alt="xxx" 
+								src="https://fi.unju.edu.ar/images/2024-Noticias/mejores-tesis-concurso.jpg">
+					      	<a  href="https://fi.unju.edu.ar/alumnos-noticias.html?start=10">CLICK AQUI</a>
+					    </div>
+					    <div class="col-10 col-md-5 col-lg">
+					      <img class="img-fluid" alt="xxx" 
+								src="https://fi.unju.edu.ar/images/2024-Noticias/diplomatura-formacion-lider.jpg">
+					      	<a  href="https://www.fi.unju.edu.ar/noticias-generales/4579-reflexiones-del-2-encuentro-de-la-diplomatura-en-formacion-integral-del-lider-y-estrategias-de-conduccion-consciente.html">CLICK AQUI</a>
+					    </div>
+					  </div>
+					</div>
+				</main>	
+			</div>
+			
+			<div class="col-12 col-lg-2">
+				<aside>
+					<div class="list-group ">
+						  <a href="#" class="list-group-item list-group-item-action active fw-bolder" aria-current="true">
+						  EXTRAS
+						  </a>
+						  <a href="https://virtual.unju.edu.ar/bibliotecas/" class="list-group-item list-group-item-action">BIBLIOTECA</a>
+						  <a href="https://www.fi.unju.edu.ar/secretarias/sec-academica/calendario-academico.html" class="list-group-item list-group-item-action">CALENDARIO</a>
+						  <a href="https://www.fi.unju.edu.ar/publicaciones/revista.html" class="list-group-item list-group-item-action">REVISTA</a>
+						</div>
+				</aside>
+			</div>
+		
 		</div>
-		<script type="text/javascript" th:src="@{/webjars/bootstrop/js/bootstrap.bundle.min.js}"></script>
+		
+		<div class="container-fluid ">
+			<footer class="bg-secondary" >
+			<h4 class="text-center fw-bolder">Informacion de contacto</h4>
+			<div class="row ">
+					
+					<div class="col-12 col-md-5 col-lg-6">
+						<ul class="list-group list-group-item-secondary ">
+						  <li class="list-group-item text-center">Contactanos</li>
+						  <li class="list-group-item">Ing. Mario Italo Palanca 10, Y4600 San Salvador de Jujuy, Jujuy</li>
+						  <li class="list-group-item">0388 422-1580</li>
+						  <li class="list-group-item">contacto@fi.unju.edu.ar</li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-5 col-lg-6">
+						<div class="list-group list-group-item-secondary">
+						  <a class="list-group-item text-center">Redes Sociales</a>
+						  <a href="https://www.facebook.com/fiunju/?locale=es_LA" class="list-group-item list-group-item-action">Facebook</a>
+						  <a href="https://www.instagram.com/fiunju/?hl=es" class="list-group-item list-group-item-action">Instagram</a>
+						  <a href="https://www.youtube.com/c/facultaddeingenieriaunju" class="list-group-item list-group-item-action">You Tube</a>
+						</div>
+					</div>
+					
+			</div>	
+			<p class="text-center fs-4 border">Esta pagina se reserva todos los derechos.</p>
+			</footer>
+		</div>
+		
+		
+		
+	
+		<script data-th-src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 	</body>
 </html>
